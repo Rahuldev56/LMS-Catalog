@@ -123,7 +123,7 @@ If validation fails, response is:
 
 Open Postman
 
-Import LibraryBookCatalog.postman_collection.json (share this file from your system)
+Import https://drive.google.com/file/d/1p1rDs3pPFOLgFbXxjoSf5ZJsaKzFVJiq/view?usp=sharing (It contains Json File First Download and then import in Postman)
 
 Test all endpoints easily
 
