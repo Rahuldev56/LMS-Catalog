@@ -1,5 +1,5 @@
-📘 Library Book Catalog API
-A simple Spring Boot-based RESTful API for managing a library’s book catalog.
+# 📘 Library Book Catalog API
+ ## A simple Spring Boot-based RESTful API for managing a library’s book catalog.
 
 🔧 Features
 Add a new book ✅
@@ -31,10 +31,10 @@ Bean Validation (JSR-380)
 
 Postman (for testing)
 
-📁 Project Structure
+# 📁 Project Structure
 
 
-src/
+## src/
 ├── main/
 │   ├── java/
 │   │   └── com.example.library/
@@ -47,49 +47,49 @@ src/
 │       └── application.properties
 
 
-⚙️ Setup Instructions
-1. ✅ Clone the Repository
+## ⚙️ Setup Instructions
+ ### 1. ✅ Clone the Repository
 
-git clone  https://github.com/Rahuldev56/LMS-Catalog.git
+### git clone  https://github.com/Rahuldev56/LMS-Catalog.git
 
-cd LMS-Catalog
+### cd LMS-Catalog
 
-2. ✅ Create MySQL Database
-
-
-CREATE DATABASE library_db;
+## 2. ✅ Create MySQL Database
 
 
-3. ✅ Configure application.properties
+### CREATE DATABASE library_db;
 
-spring.datasource.url=jdbc:mysql://localhost:3306/library_db
-spring.datasource.username=root
-spring.datasource.password=your_password
 
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+## 3. ✅ Configure application.properties
+
+### spring.datasource.url=jdbc:mysql://localhost:3306/library_db
+ ### spring.datasource.username=root
+ ### spring.datasource.password=your_password
+
+### spring.jpa.hibernate.ddl-auto=update
+### spring.jpa.show-sql=true
+### spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 ⚠️ Replace root and your_password with your MySQL credentials.
 
-4. ✅ Build and Run the App
-From IntelliJ:
+## 4. ✅ Build and Run the App
+ ### From IntelliJ:
 
-Right-click LibraryManagementSystemApplication.java → Run
+### Right-click LibraryManagementSystemApplication.java → Run
 
-Or via terminal:
+### Or via terminal:
 
-mvn clean install
-mvn spring-boot:run
+### mvn clean install
+ ### mvn spring-boot:run
 
-🔄 API Endpoints
-Method	Endpoint	Description
-POST	/books	Add a new book
-GET	/books	Retrieve all books
-GET	/books/{id}	Get book by ID
-DELETE	/books/{id}	Delete a book by ID
-PUT	/books/{id}/availability	Update availability status
+ ## API Endpoints
+ ### Method	Endpoint	Description
+ ### POST	/books	Add a new book
+ ### GET	/books	Retrieve all books
+### GET	/books/{id}	Get book by ID
+### DELETE	/books/{id}	Delete a book by ID
+### PUT	/books/{id}/availability	Update availability status
 
-📮 Sample Requests (Postman)
+##  Sample Requests (Postman)
 ✅ Add Book
 
 POST /books
@@ -118,16 +118,17 @@ If validation fails, response is:
   "author: Author cannot be empty"
 ]
 
-📦 Postman Collection
+## Postman Collection
 
 
-Open Postman
+### Open Postman
 
-Import https://drive.google.com/file/d/1p1rDs3pPFOLgFbXxjoSf5ZJsaKzFVJiq/view?usp=sharing (It contains Json File First Download and then import in Postman)
+#### Import https://drive.google.com/file/d/1p1rDs3pPFOLgFbXxjoSf5ZJsaKzFVJiq/view?usp=sharing
+(It contains Json File First Download and then import in Postman)
 
-Test all endpoints easily
+### #Test all endpoints easily
 
-📚 Dependencies Used
+## 📚 Dependencies Used
 
 <dependencies>
     <dependency>
